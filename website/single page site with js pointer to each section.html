@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <style>
+        .container{
+            max-width: 1040px;
+            min-width: 800px;
+            margin: 0 auto;
+        }
+        .section{
+            min-height: 500px ;
+            padding: 50px;
+        }
+        #mast{
+            width: 100%;
+            background-color:black;
+            height:50px;
+            margin-top: 10px;
+            position: fixed;
+        }
+        nav{
+            margin-top: 15px;
+            width: 600px;
+        }
+        #nav ul{
+            list-style: none;
+            display: block;
+            margin: 0 auto;
+        }
+        #nav li{
+            float: left;
+            padding: 0 10px;
+            border:black dashed 1px;
+            background-color: black;
+        }
+        #nav li a{
+            text-decoration: none;
+            font-size: 1 em;
+            color:white;
+        }
+        #nav li a:hover{
+            color: gainsboro;
+        }
+        #nav li a.active{
+            border-bottom: 3px solid grey;
+        }
+        .clear{
+            clear: both;
+        }
+        #section1{
+            background: url('https://placeimg.com/640/500/animals');
+            background-size: cover;
+        }
+        .wrap{
+            background-color: rgba(200,200,200,0.5);
+            border-radius: 20px;
+            padding:30px;
+            margin: 40px auto;
+        }
+        #footer{
+            background-color: black;
+            color: white;
+            padding:20px;
+        }
+        .col1{
+            width:66%;
+            display:inline-block;
+            margin-bottom: 20px;;
+        }
+        .col2{
+            width:33%;
+            display: inline-block;
+        }
+        img{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header id="mast">
+        <div>
+            <nav id="nav">
+            <ul>
+                <li><a href="#section1" class="active">section1</a></li> <!--class active defines wich section the user is currently on -->
+                <li><a href="#section2" >section2</a></li>
+                <li><a href="#section3" >section3</a></li>
+                <li><a href="#section4" >section4</a></li>
+                <li><a href="#section5" >section5</a></li>
+                <li><a href="#section6" >section6</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div class="container">
+    <section id="section1" class="section clear">
+        <div class="wrap">
+                <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+                Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz,
+                bad nymph, for quick jigs vex!</p>
+                <p>Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump;
+                dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim.
+                Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex.
+                Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs!
+                "Now fax quiz Jack! " my brave</p>
+        </div>
+    </section>
+    <section id="section2" class="section">
+        <div class="wrap">
+                <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+                Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz,
+                bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.
+                Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim.
+                jinx zippy fowls.</p>
+                <p>Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra,
+                Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit.
+                Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow.</p>
+                <img src="https://placeimg.com/900/480/nature">
+        </div>
+    </section>
+    <section id="section3" class="section">
+        <div class="wrap">
+            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.</p>
+            <p>Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</p>
+            <p>Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy
+            veldt fox. Bright vixens jump; dozy fowl quack. Qu</p>
+            <ul>
+                <li>Waltz,h, for quick jigsquick-jived</li>
+                <li>Waltz, bad ny, for quik-jived</li>
+                <li>Waltz, bad nymph, for quick jigsk-jived</li>
+                <li>Waltz=ph, for quick jigs vex! Fox nymphs grauick-jived</li>
+            </ul>
+            <img src="https://placeimg.com/500/480/any">
+        </div>
+    </section>
+    <section id="section4" class="section">
+        <div class="wrap">
+            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+            unk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</p>
+            <p>Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy
+            veldt fox. Bright vixens jump; dozy fowl quack.</p>
+            <p>Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my
+            junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick,
+            Baz, get my woven flax jodhpurs! "Now fax quiz Jack! " my brave</p>
+            <img src="https://placeimg.com/500/800/tech">
+        </div>
+    </section>
+    <section id="section5" class="section">
+        <div class="wrap">\
+            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax
+            quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad
+            nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.
+            Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing
+            daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jock
+            s help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! "Now fax quiz Jack!" my brave</p>
+            <img src="https://placeimg.com/500/480/any">
+        </div>
+    </section>
+    <section id="section6" class="section">
+        <div class="wrap">
+            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+            Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick ji
+            gs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens</p></div>
+            <img src="https://placeimg.com/900/480/nature">
+    </section>
+    <footer id="footer">
+        <div>
+            <div class="col1">
+                copy right website
+                <p>contact for more infor</p>
+            </div>
+                <div class="col2">
+                    <ul>
+                        <li>network1</li>
+                        <li>network2</li>
+                        <li>network3</li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+    <script>
+        var section = document.querySelectorAll('.section');
+        var sections={}
+        section.forEach(function(e){
+            console.log(e.id,e.offsetTop);
+            sections[e.id]=e.offsetTop;
+        })
+        window.onscroll=function(){
+            var scrollPos = document.documentElement.scrollTop||
+            document.body.scrollTop;
+            console.log(scrollPos);
+            for(var x in sections){
+                if(sections[x]<= scrollPos){
+                    document.querySelector('.active').setAttribute('class','');
+                    document.querySelector('a[href*='+x+']').setAttribute('class','active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

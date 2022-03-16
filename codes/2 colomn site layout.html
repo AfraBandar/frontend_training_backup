@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Page</title>
+
+    <style>
+           .navbar{ margin: auto;
+        text-align: center;
+        background-color: black;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: aliceblue;
+        display: inline-block;
+        
+        
+    }
+    .navbar li{
+        display: inline-block;
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px;
+        min-width: 180px;
+    }
+    .navbar ul{
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+        .container{
+            width: 1330px; /*adjust thr width of the whole page*/
+            background-color: rgb(180, 177, 177);
+            margin:auto; /*to center elements*/
+            padding: 0;
+        }
+        .divy{
+            border: 1px dashed black;
+            height: 200px; /*to enlarge ever block on content*/
+        }
+        #block2{
+            height: 70px;
+            background-color: black;
+            color: beige;
+        }
+        
+        .sidemenu{
+            width: 40%;
+            float: left;
+        }
+        .main{
+            width: 60%;
+            float: right;
+            background-color: rgb(255, 255, 255);
+        }
+        .clearfix{ /*to keep the footer from floating
+            with the rest of the content*/
+            clear: both;
+        }
+        .bgcolor{
+            background-color: rgb(60, 60, 70);
+            height: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div id="block1" class="divy">Header</div>
+        <div id="block2" class="navbar">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="logIn.html">Log in</a></li>
+                <li><a href="Services.html"> Services</a></li>
+                <li><a href="CONTACT.html">Contact Us</a></li>
+            </ul>
+        </div>
+<div class="bgcolor">
+    <div class="main">
+        <div id="block3" class="divy">Content1</div>
+        <div id="block4" class="divy">Content2</div>
+        <div id="block5" class="divy">Content3</div>
+    </div>
+
+    <div class="sidemenu">
+        <div id="block6" class=>Content4</div>
+        <!-divy class is removed so the
+        css for divy dosnt shrink up the side menu->
+    </div> <div class="clearfix"></div> <!-this clearfix div allows the backgroundcolor
+     of the bgcolor container no appear->
+</div>
+        <div id="block7" class="divy clearfix">footer</div>
+    </div>
+</body>
+</html>

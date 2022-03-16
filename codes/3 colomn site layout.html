@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Page</title>
+
+    <style>
+    .navbar{ margin: auto;
+        text-align: center;
+        background-color: black;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: aliceblue;
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px;
+        min-width: 180px;
+    }
+    .navbar ul{
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+        .container{
+            width: 1330px; /*adjust thr width of the whole page*/
+            background-color: rgb(233, 198, 198);
+            margin:auto; /*to center elements*/
+       }
+        .divy{
+            width: 200px; /*to enlarge ever block on content*/
+            padding: 10px;
+            
+        }
+        #block2{
+            height: 70px;
+            background-color: black;
+            color: beige;
+        }
+        .clearfix{ /*to keep the footer from floating
+            with the rest of the content*/
+            clear: both;
+        }
+        .col1{
+            background-color: rgb(199, 144, 144);
+            float: left;
+            width: 50%;
+        }
+        .col2{
+            background-color: rgb(185, 91, 91);
+            width: 50%;
+            display:inline-block;
+        }
+        .col3{
+            background-color: rgb(179, 43, 43);
+            float: right;
+            width: 33%;
+            
+        }
+        .col1main{
+            float: left;
+            width: 67%;
+            background-color: rgb(185, 91, 91);
+        }
+        .bgcolor{
+            height: 100%;
+            background-color: rgb(179, 43, 43);
+        }
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div id="block1" class="divy">Header</div>
+        <div id="block2" class="navbar">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="logIn.html">Log in</a></li>
+                <li><a href="Services.html"> Services</a></li>
+                <li><a href="CONTACT.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="bgcolor">
+    <div class="col1main">
+        <div id="block3" class="col1">
+            <div class="divy"> Content1 <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                    excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia 
+                    est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                    assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis
+                    aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non 
+                    recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus 
+                    maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+            </div>
+        </div>
+        <div id="block4" class="col2">
+            <div class="divy"> Content2</div></div>
+    </div>
+    
+        <div id="block5" class="col3">
+            <div class="divy"> Content3</div></div>
+            <!- class divy was sepreted in a deffrent div 
+                so when the padding is added in the divy 
+                it dosnt miss up the precntage calc of class
+                col-> 
+            </div>
+
+        <div id="block7" class="divy clearfix">footer</div>
+    </div>
+</body>
+</html>

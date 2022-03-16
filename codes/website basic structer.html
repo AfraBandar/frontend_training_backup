@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Festive&family=Karla:ital,wght@1,200&family=Nanum+Gothic&display=swap');
+        body{
+            font-family: 'Festive', cursive;
+            font-family: 'Karla', sans-serif;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(29, 39, 95);
+        }
+        h1{
+            font-size: 2em;
+        }
+        .logo{
+            font-size: 3em;
+        }
+        p::first-letter{
+            font-size: 2em;
+        }
+        .container{
+            width: 1280px;
+            margin:auto; /*center the page*/
+            background-color:whitesmoke;
+            padding:10px;
+        }
+        nav{
+            background-color: black;
+            width: 100%;
+        }
+        nav ul li{
+            list-style-type:none; /*to remove the dote before each item*/
+            display: inline-block;
+            width:150px;/*to make a buffer for each item much like padding*/
+        }
+        nav a{
+            display:block;
+            text-decoration: none;
+            color:whitesmoke;
+            text-align: center; /*center the text in the middle of the 150px with*/
+            padding:10px 0; /*padding set to the top and bottom only*/
+        }
+        nav a:hover{
+            color:rgb(255, 255, 255);
+            background-color: rgb(59, 58, 58);
+        }
+        .header-container{
+            text-transform: uppercase;
+            color: white;
+            background-color:black;
+            padding-top:10px;
+            text-align: center;
+            }
+        #content{
+                background-color: rgb(230, 230, 230);
+                width: 56%;
+                min-height:500px;
+                float: right;
+                padding: 2%;
+            }
+        #sidemenu{
+                background-color: rgb(29, 39, 95);
+                color: white;
+                float:left;
+                padding:2%;
+                width:36%;
+                text-transform: uppercase;
+            }
+        .footer-container{
+                clear: both;
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding:10px;
+            }
+        #sidemenu li{
+                list-style: none;
+                color: white;
+                padding: 10px;
+                display: block;
+                width: 100%;
+            border-radius: 35px;
+            }
+        #sidemenu li:hover{
+            background-color:rgb(45, 57, 126);
+        }
+        #sidemenu ul {
+            padding: 0;
+            margin: 0;
+            }
+        #sidemenu a{
+            text-decoration: none;
+            color:whitesmoke;
+            text-align: center; /*center the text in the middle of the 150px with*/
+            }
+        #sidemenu a:hover{
+                color: white;
+                background-color:rgb(45, 57, 126);
+            }
+        .main-contanier{
+                background-color: rgb(29, 39, 95);
+            }
+        .clearfix{
+                clear: both;
+            }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <header>
+            <div class="logo">blog name</div>
+            <nav>
+                <ul>
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">about</a></li>
+                    <li> <a href="">Contact Us</a></li>
+                    <li> <a href="">Log in</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main-contanier">
+        <div id="content" >
+            <header><h1> main page content </h1></header>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a
+                page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
+                normal distribution of letters, as opposed to using 'Content here, content here', making it look
+                like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
+                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+            <footer> share on social media</footer>
+        </div>
+        <aside id="sidemenu">
+            <h3>newsfeed</h3>
+            <ul>
+                <li><a href="">link1</a></li>
+                <li><a href="">link1</a></li>
+                <li><a href="">link1</a></li>
+                <li><a href="">link1</a></li>
+            </ul>
+        </aside>
+        <div class="clearfix"></div>
+    </div>
+    <div class="footer-container clearfix">
+        <footer>
+            <div>copyright 2021 </div>
+            <div>more info</div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

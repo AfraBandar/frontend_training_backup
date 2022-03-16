@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+    function Employee (name,age,id) {
+        this.name= name;
+        this.age= age;
+        this.id= id;
+        this.empInfo = function() {
+            document.write("<br/> Employee details ")
+            document.write("<br/> Name= " +this.name);
+            document.write("<br/> Age= " +this.age);
+            document.write("<br/> Id= " +this.id);
+            document.write("<br/>")
+        }
+    }
+    var emp1 = new Employee("Ash",25,123);
+    var emp2 = new Employee("Ghada",28,888);
+    emp1.empInfo();
+    emp2.empInfo();
+    Employee.prototype.gender="";
+    emp1.gender="nonbinary";
+    Employee.prototype.crid= function(){
+        document.write("<br/> crid name: "+this.name +"  " +this.gender  );
+        /*document.write("<br/> crid gender: "+this.gender );*/
+        document.write("<br/> ");
+    }
+
+    emp1.crid();
+
+    /*
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -*/
+
+    function Managers () {
+        this.mgrName="Fayez";
+        this.mgrAge=33;
+        this.mgrId=123456;
+        this.MgrInfo = function() {
+            document.write("<br/> Managers information: ");
+            document.write("<br/> Name: " +this.mgrName);
+            document.write("<br/> Age: " +this.mgrAge);
+            document.write("<br/> Id: " +this.mgrId);
+            document.write("<br/>")
+        }
+    }
+    var mgr1 = new Managers();
+    mgr1.MgrInfo();
+    </script>
+</head>
+<body>
+</body>
+</html>

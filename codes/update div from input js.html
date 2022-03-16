@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="test.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1> Update output div content from input form </h1>
+    <!-- this is a test for getElementById, div has id of output1, and an input id of username, onchange
+    the func up text
+    gets activated, first  connect var username with the value or the ponter of id output1, the the func uptext
+    will take the value inserted in the input of the username id and then it writes the value of the holder in the username variable.
+    this will update any input from the input tag to the div tag-->
+    <div id="output1">  Ash  </div>
+    <p>
+        Enter your name :<br><input type="text" id="username" onchange="uptext()">
+    </p>
+<script>
+    var username= document.getElementById('output1');
+    function uptext(){
+        var holder = document.getElementById('username').value;
+        username.innerText = holder;
+        /*can use -> username.innerText = document.getElementById('username').value; to
+        shorten to one line of code*/
+    }
+</script>
+
+</body>
+</html>

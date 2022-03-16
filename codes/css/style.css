@@ -1,0 +1,76 @@
+
+   .navbar{ 
+    margin:auto;
+    text-align: center;
+    background-color: black;
+}
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    
+    
+}
+.navbar li{
+    display: inline-block;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    min-width: 180px;
+    border: 1px rgb(70, 68, 68) dashed;
+    
+    
+}
+.navbar ul{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+    a {
+    color: black;
+    text-decoration: none;
+    }
+    body {
+    background-color: rgba(220, 220, 220, 0.253);
+    }
+    body {
+    background-image:url('backg3.png') ,url('Web-Page-Background-Color.jpg');
+    /*background-image: url('imag11.jpg'), url('backg2.png'); */
+    background-repeat:no-repeat; 
+    background-size:cover;
+    background-color: rgba(128, 128, 128, 0.466)
+    }
+    header{
+        border: solid  rgba(0, 0, 0, 0.589) 10px;
+        outline: solid rgba(219, 52, 52, 0.226) 10px;
+        margin: 50px 10px 50px 10px;
+        padding: 100px;
+    }
+    .container{
+        max-width: 1080px;
+        width:100%;
+        margin: auto;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: oblique;
+        font-size: medium;
+        text-align: center;
+        padding:50px ;
+        background-color: rgba(141, 179, 197, 0.548);
+    }
+    #images{
+        text-align: center;
+    }
+    table{
+        margin: auto;
+        border: black solid ;
+    }
+    td{
+        border: palevioletred dashed 1px;
+    }
+    th{
+        border: 1px rebeccapurple dashed;
+    }
+
